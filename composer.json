@@ -1,0 +1,15 @@
+{
+    "name": "prinsfrank/phprig",
+    "description": "RIG scoring for PHP codebases",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "PrinsFrank\\PHPRIG\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^8.2",
+        "nikic/php-parser": "^5.9"
+    }
+}
