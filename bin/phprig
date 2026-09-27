@@ -1,0 +1,13 @@
+#! /usr/bin/env php
+<?php declare(strict_types=1);
+
+require_once isset($_composer_autoload_path) ? $_composer_autoload_path : dirname(__DIR__) . '/vendor/autoload.php';
+
+$projectRoot = isset($_composer_autoload_path) ? dirname($_composer_autoload_path, 2) : dirname(__DIR__);
+
+$application = new \Symfony\Component\Console\Application();
+$application->addCommands([
+    new \PrinsFrank\PHPRIG\Commands\AnalyseCommand($projectRoot),
+    new \PrinsFrank\PHPRIG\Commands\InitCommand($projectRoot),
+]);
+$application->run();

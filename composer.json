@@ -8,8 +8,13 @@
             "PrinsFrank\\PHPRIG\\": "src/"
         }
     },
+    "bin": [
+        "bin/phprig"
+    ],
     "require": {
         "php": "^8.2",
-        "nikic/php-parser": "^5.9"
+        "nikic/php-parser": "^5.9",
+        "symfony/console": "^8.1",
+        "composer-runtime-api": "^2.2"
     }
 }
